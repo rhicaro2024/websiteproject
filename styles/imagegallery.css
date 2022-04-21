@@ -1,0 +1,78 @@
+.logoimage {
+  max-width: 100px;
+  width: 100%;
+  float: left;    
+}
+body {
+  max-width: 100%;
+}
+main {
+  max-width: 99%;
+  margin: auto;
+}
+h1 {
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px red, -1px -1px 1px red, -1px 1px 1px red, 1px -1px 1px red;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px #000000, 1px -1px 1px #000000;
+}
+header h2 {
+    font-size: 150%;
+}
+h1 {
+  font-size: 250%;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  margin-top: 4px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    flex-basis: 1;
+    max-width: 350px;
+    width: 100%;
+    vertical-align: middle;
+    border: 3px outset black;
+    border-radius: 10px;
+}
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .colum img {
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+      flex-basis: 1;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+}

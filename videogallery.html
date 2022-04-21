@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/videogallery.css">
+
+    <link rel="icon" href="images/favicon.png">
+    <title>favThings:videogallery</title>
+</head>
+<body>
+    <header class="clearfix">
+      <img class="logoimage" src="images/logo.png">
+			<a href="index.html"><img id="logoimage" src="#" alt=""></a>
+    <h2>Video Gallery</h2>
+</header>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="imagegallery.html">Image Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="videogallery.html">Video Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slideshow.html">Slide Show</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<nav id="nav_list">
+    <ul>
+        <li><a href="#vid1"> Jack Black 1</a></li>
+        <li><a href="#vid2"> Jack Black 2</a></li>
+        <li><a href="#vid3"> Jack Black 3</a></li>
+        <li><a href="#vid4"> Jack Black 4</a></li>
+        <li><a href="#vid5"> Jack Black 5</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <article id="vid1">
+            <h4>Complete Master Works 2</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/XqFkqn9lLUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article id="vid2">
+            <h4>Beelzeboss (The Final Showdown)</h4>
+            <div class="videowrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7BkxsdESz4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article id="vid3">
+            <h4>Wonderboy</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/FL4HSiGvk68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article id="vid4">
+            <h4>Kickapoo</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/MHgzzkgQC0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article id="vid5">
+            <h4>Master Exploder</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/80DtQD5BQ_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+    <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+    <script>
+        // When the user scrolls down 800px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+     
+         function scrollFunction() {
+           if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+             document.getElementById("cornerbtn").style.display = "block";
+           } else {
+             document.getElementById("cornerbtn").style.display = "none";
+           }
+         }
+     
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+     </script>
+</main>
+    <footer>
+        <p> &copy; 2022 Raphael Hicaro Studios</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
